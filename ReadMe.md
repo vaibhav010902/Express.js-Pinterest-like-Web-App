@@ -88,7 +88,17 @@ Project/
 
 ## Screenshots
 
-*Include screenshots of your app here to showcase its UI.*
+<p align="center">
+  <img src="project-image/sign-up.png" alt="Photo 1" width="200"/>
+  <img src="project-image/login.png" alt="Photo 2" width="200"/>
+    <img src="project-image/dashboard.png" alt="Photo 2" width="200"/>
+    <img src="project-image/Screenshot 2025-08-08 231937.png" alt="Photo 2" width="200"/>
+    <img src="project-image/notification-panel.png" alt="Photo 2" width="200"/>
+    <img src="project-image/setting-panel.png" alt="Photo 2" width="200"/>
+    <img src="project-image/post-database.png" alt="Photo 2" width="200"/>
+    <img src="project-image/user-database.png" alt="Photo 2" width="200"/>
+</p>
+
 
 ---
 
