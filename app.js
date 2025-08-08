@@ -7,6 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 // var worker = require('./routes/')
+require('dotenv').config();
 const expressSession = require('express-session')
 const passport = require('passport')
 const flash = require('connect-flash');
