@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
+    <title>Navbar</title>
+</head>
+
+<body>
+    <nav class="sidebar">
+        <div class="nav-btn-container">
+            <img src="data:image/png;base64,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"
+                alt="logo">
+            <a href="/home"><span class="material-symbols-outlined">home</span></a>
+            <a href=""><span class="material-symbols-outlined">explore</span></a>
+            <a href=""><span class="material-symbols-outlined">browse</span></a>
+            <a href=""><span class="material-symbols-outlined">add_box</span></a>
+            <a href=""><span id="sidebar-notification-btn" class="material-symbols-outlined">notifications</span></a>
+            <a href=""><span id="sidebar-message-btn" class="material-symbols-outlined">sms</span></a>
+        </div>
+        <div class="nav-btn-setting"">
+            <span class="material-symbols-outlined" id="setting-btn">settings</span>
+        </div>
+    </nav>
+    <nav class="navbar">
+        <div class="search-bar">
+            <div class="search-bar-container">
+                <div class="search-bar-container-input">
+                    <div class="search-bar-container-icon">
+                        <span class="material-symbols-outlined">search</span>
+                    </div>
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+        </div>
+        <div class="user-account-btns-container">
+            <% if(user.dp===undefined){%>
+                <a href="/login"><img src="/images/navbar/account_circle_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                        alt=""></a>
+                <% } else{%>
+                    <a href="/profile"><img src="/images/uploads/<%=user.dp%>" alt=""></a>
+                    <% }%>
+        </div>
+        <div class="keyboard-arrow-down">
+            <span class="material-symbols-outlined">
+                keyboard_arrow_down
+            </span>
+        </div>
+    </nav>
+    <div class="keyboard-arrow-down-container">
+        <div class="keyboard-arrow-down-container-content">
+            <div class="keyboard-arrow-down-container-1">
+                <div class="keyboard-arrow-down-container-1-heading">
+                    <span>Currently in</span>
+                </div>
+                <div class="keyboard-arrow-down-container-1-option-1">
+                    <div class="keyboard-arrow-down-container-1-option-1-container-1">
+                        <div class="keyboard-arrow-down-container-icon">
+                            <% if(user.dp===undefined){%>
+                                <a href="/login"><img
+                                        src="/images/navbar/account_circle_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                                        alt=""></a>
+                                <% } else{%>
+                                    <a href="/profile"><img src="/images/uploads/<%=user.dp%>" alt=""></a>
+                                    <% }%>
+                        </div>
+                        <div class="keyboard-arrow-down-container-user-details">
+                            <p>
+                                <%= user.fullname%>
+                            </p>
+                            <p>Personel</p>
+                            <p>
+                                <%= user.email%>
+                            </p>
+                        </div>
+                        <div>
+                            <h1>-</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="keyboard-arrow-down-container-1-option-2">
+                    <span>Convert to business</span>
+                </div>
+            </div>
+            <div class="keyboard-arrow-down-container-2">
+                <div><span class="your-account-btn">Your Account</span></div>
+                <div><span class="add-pinterest-account-btn">Add Pinterest Account</span></div>
+                <a href="/logout" class="log-out-btn"><span>Log out</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="notification-panel">
+        <div class="notification-panel-container">
+            <div class="notification-panel-container-header">
+                <div><span>Updates</span></div>
+            </div>
+            <div class="notification-panel-container-content">
+                <div class="notification-panel-container-content-header"><span>Seen</span></div>
+                <% user.posts.forEach((post)=>{%>
+                    <a class="notification-panel-container-content-container-1" href="/dashboard">
+                        <div class="notification-panel-container-content-container-1-update-details">
+
+                            <div class="update-img">
+                                <img src="/images/uploads/<%=post.image%>" alt="">
+                            </div>
+                            <div class="update-details">
+                                <span>
+                                    Lorem ipsum dolor,
+                                </span>
+                            </div>
+                        </div>
+                        <div class="notification-panel-container-content-container-1-btn">
+                            <span class="material-symbols-outlined">
+                                more_horiz
+                            </span>
+                        </div>
+                    </a>
+                    <%})%>
+            </div>
+        </div>
+    </div>
+    <div class="message-panel">
+        <div class="message-panel-container-header">
+            <div><span>Message</span></div>
+        </div>
+        <div class="message-panel-container-content">
+            <div class="new-message-btn-container">
+                <div class="new-message-btn">
+                    <div class="new-message-btn-icon">
+                        <span class="material-symbols-outlined">
+                            add_comment
+                        </span>
+                    </div>
+                    <div class="new-message-btn-content">
+                        <span>New Message</span>
+                    </div>
+                </div>
+            </div>
+            <div class="invite-friend-btn-container">
+                <div class="invite-friend-btn">
+                    <div class="invite-friend-btn-icon">
+                        <span class="material-symbols-outlined">
+                            person_add
+                        </span>
+                    </div>
+                    <div class="invite-friend-btn-content">
+                        <span>Invite your Friends</span>
+                        <p>Connect to start chatting</p>
+                    </div>
+                </div>
+            </div>
+            <% user.posts.forEach((post)=>{%>
+                <a class="message-panel-container-content-container-1" href="/dashboard">
+                    <div class="message-panel-container-content-container-1-update-details">
+
+                        <div class="update-img">
+                            <img src="/images/uploads/<%=post.image%>" alt="">
+                        </div>
+                        <div class="update-details">
+                            <span>
+                                Lorem ipsum dolor,
+                            </span>
+                        </div>
+                    </div>
+                    <div class="message-panel-container-content-container-1-btn">
+                        <span class="material-symbols-outlined">
+                            more_horiz
+                        </span>
+                    </div>
+                </a>
+            <%})%>
+        </div>
+        <div class="invite-friend-panel">
+            <div class="invite-friend-panel-container">
+                <div class="invite-friend-panel-image-container">
+                    <svg fill="none" height="150" viewBox="0 0 150 150" width="150" xmlns="http://www.w3.org/2000/svg"><mask fill="white" id="path-1-inside-1_5495_91007"><rect height="68" rx="1.5" transform="rotate(-5.75723 15 54.2305)" width="97" x="15" y="54.2305"></rect></mask><rect fill="#111111" height="68" mask="url(#path-1-inside-1_5495_91007)" rx="1.5" stroke="black" stroke-width="4.5" transform="rotate(-5.75723 15 54.2305)" width="97" x="15" y="54.2305"></rect><mask fill="white" id="path-2-inside-2_5495_91007"><rect height="68" rx="1.5" transform="rotate(-5.75723 17.5 49.7305)" width="97" x="17.5" y="49.7305"></rect></mask><rect fill="white" height="68" mask="url(#path-2-inside-2_5495_91007)" rx="1.5" stroke="black" stroke-width="4.5" transform="rotate(-5.75723 17.5 49.7305)" width="97" x="17.5" y="49.7305"></rect><rect fill="#111111" height="68" rx="1.5" width="97" x="31.5" y="33.5"></rect><mask fill="white" id="path-4-inside-3_5495_91007"><rect height="68" rx="1.5" width="97" x="35" y="30"></rect></mask><rect fill="white" height="68" mask="url(#path-4-inside-3_5495_91007)" rx="1.5" stroke="black" stroke-width="4.5" width="97" x="35" y="30"></rect><path d="M53.2202 52.4096C55.9628 52.2376 61.2672 49.7768 60.8053 41.3432C60.7979 41.2391 60.7916 41.1373 60.7863 41.0379C60.7935 41.1405 60.7998 41.2423 60.8053 41.3432C61.046 44.7072 62.4395 50.4178 66.2377 51.8918C66.5071 51.9964 66.5162 52.4985 66.2483 52.6067C63.977 53.524 61.432 56.1946 61.047 62.5048C61.0452 62.5383 61.0433 62.5714 61.0412 62.6043C61.0431 62.571 61.045 62.5378 61.047 62.5048C61.2353 59.0423 59.937 52.3302 53.2202 52.4096Z" fill="white" stroke="#111111" stroke-linejoin="round" stroke-width="2.25"></path><path d="M45.9884 84.0499C48.4393 82.8984 52.0472 81.1962 53.3819 81.9567C55.0503 82.9072 54.0414 84.662 56.0184 84.4518C57.9955 84.2415 62.2058 80.961 63.6828 82.0552C65.1598 83.1495 64.9285 84.3355 67.523 83.9681C69.5986 83.6742 74.5646 83.4435 76.3261 83.1347" stroke="#111111" stroke-linecap="round" stroke-width="2.25"></path><path d="M46.4777 76.2726C48.9286 75.121 54.1641 73.008 55.4988 73.7685C57.1672 74.719 55.6807 77.192 57.6577 76.9817C59.6348 76.7715 65.5416 72.9418 67.0186 74.036C68.4956 75.1303 66.3418 77.0185 68.9363 76.6511C71.012 76.3572 75.0538 75.6661 76.8153 75.3573" stroke="#111111" stroke-linecap="round" stroke-width="2.25"></path><path d="M88.0762 38.6367L88.2995 89.6365" stroke="black" stroke-width="2.25"></path><mask fill="white" id="path-9-inside-4_5495_91007"><path clip-rule="evenodd" d="M111.872 39.0857L107.394 39.2281C107.389 40.0636 106.675 40.7544 105.774 40.783C104.872 40.8115 104.117 40.1675 104.059 39.3342L99.5834 39.4766L99.7291 44.0921C100.641 44.0742 101.398 44.7438 101.425 45.597C101.452 46.4502 100.738 47.1665 99.8274 47.2063L99.9595 51.3928C100.857 51.3902 101.598 52.0544 101.625 52.898C101.651 53.7418 100.954 54.4516 100.058 54.5058L100.19 58.6937C101.074 58.7061 101.798 59.3647 101.825 60.1988C101.851 61.033 101.17 61.7363 100.288 61.8045L100.436 66.5077L104.798 66.369C104.785 65.5193 105.505 64.8113 106.417 64.7824C107.33 64.7534 108.094 65.4142 108.134 66.2628L112.613 66.1203C112.619 65.2863 113.332 64.5971 114.232 64.5686C115.133 64.54 115.888 65.1825 115.947 66.0142L119.865 65.8896L119.719 61.2746C118.809 61.2906 118.054 60.6216 118.027 59.7696C118 58.9174 118.712 58.2019 119.621 58.1604L119.489 53.9737C118.592 53.9745 117.854 53.311 117.827 52.4684C117.8 51.6258 118.496 50.9167 119.39 50.8609L119.258 46.6727C118.376 46.6586 117.654 46.0006 117.627 45.1677C117.601 44.3346 118.28 43.6321 119.16 43.5623L119.012 38.8585L115.208 38.9795C115.223 39.8303 114.502 40.5398 113.588 40.5687C112.675 40.5977 111.911 39.9355 111.872 39.0857Z" fill-rule="evenodd"></path></mask><path d="M107.394 39.2281L107.322 36.9793L105.156 37.0482L105.144 39.2153L107.394 39.2281ZM111.872 39.0857L114.119 38.9822L114.017 36.7663L111.8 36.8368L111.872 39.0857ZM105.774 40.783L105.845 43.0318L105.774 40.783ZM104.059 39.3342L106.304 39.1785L106.154 37.0164L103.987 37.0854L104.059 39.3342ZM99.5834 39.4766L99.5119 37.2278L97.2636 37.2993L97.3345 39.5476L99.5834 39.4766ZM99.7291 44.0921L97.4802 44.163L97.5503 46.3852L99.7732 46.3416L99.7291 44.0921ZM101.425 45.597L103.673 45.5258L103.673 45.5258L101.425 45.597ZM99.8274 47.2063L99.7292 44.9584L97.5084 45.0554L97.5785 47.2773L99.8274 47.2063ZM99.9595 51.3928L97.7106 51.4637L97.7796 53.649L99.9659 53.6427L99.9595 51.3928ZM101.625 52.898L99.3757 52.9692L101.625 52.898ZM100.058 54.5058L99.9219 52.2599L97.7399 52.3918L97.8088 54.5767L100.058 54.5058ZM100.19 58.6937L97.941 58.7647L98.0088 60.9135L100.159 60.9435L100.19 58.6937ZM101.825 60.1988L99.5757 60.27L101.825 60.1988ZM100.288 61.8045L100.115 59.5612L97.9714 59.7269L98.0392 61.8754L100.288 61.8045ZM100.436 66.5077L98.1876 66.5787L98.2586 68.8281L100.508 68.7566L100.436 66.5077ZM104.798 66.369L104.869 68.6178L107.083 68.5474L107.048 66.3335L104.798 66.369ZM106.417 64.7824L106.346 62.5335L106.346 62.5335L106.417 64.7824ZM108.134 66.2628L105.887 66.3702L105.992 68.5821L108.206 68.5117L108.134 66.2628ZM112.613 66.1203L112.684 68.3692L114.846 68.3004L114.863 66.1379L112.613 66.1203ZM114.232 64.5686L114.161 62.3197L114.161 62.3197L114.232 64.5686ZM115.947 66.0142L113.703 66.1746L113.857 68.3319L116.019 68.2631L115.947 66.0142ZM119.865 65.8896L119.936 68.1385L122.185 68.0669L122.114 65.8186L119.865 65.8896ZM119.719 61.2746L121.968 61.2036L121.898 58.9857L119.679 59.0249L119.719 61.2746ZM118.027 59.7696L115.778 59.8408L115.778 59.8408L118.027 59.7696ZM119.621 58.1604L119.723 60.4081L121.94 60.307L121.87 58.0894L119.621 58.1604ZM119.489 53.9737L121.738 53.9027L121.669 51.7217L119.487 51.7237L119.489 53.9737ZM117.827 52.4684L115.578 52.5396L115.578 52.5396L117.827 52.4684ZM119.39 50.8609L119.531 53.1065L121.708 52.9707L121.639 50.7899L119.39 50.8609ZM119.258 46.6727L121.507 46.6017L121.439 44.4571L119.294 44.423L119.258 46.6727ZM117.627 45.1677L115.378 45.2388L115.378 45.2388L117.627 45.1677ZM119.16 43.5623L119.338 45.8052L121.477 45.6356L121.409 43.4913L119.16 43.5623ZM119.012 38.8585L121.261 38.7875L121.19 36.5381L118.94 36.6096L119.012 38.8585ZM115.208 38.9795L115.136 36.7307L112.919 36.8012L112.958 39.019L115.208 38.9795ZM113.588 40.5687L113.66 42.8176L113.588 40.5687ZM107.465 41.477L111.943 41.3345L111.8 36.8368L107.322 36.9793L107.465 41.477ZM105.845 43.0318C107.82 42.9692 109.631 41.4177 109.643 39.241L105.144 39.2153C105.146 38.7094 105.531 38.5395 105.702 38.5341L105.845 43.0318ZM101.814 39.4899C101.965 41.6611 103.87 43.0944 105.845 43.0318L105.702 38.5341C105.874 38.5286 106.269 38.6739 106.304 39.1785L101.814 39.4899ZM99.655 41.7255L104.131 41.5831L103.987 37.0854L99.5119 37.2278L99.655 41.7255ZM101.978 44.0211L101.832 39.4056L97.3345 39.5476L97.4802 44.163L101.978 44.0211ZM103.673 45.5258C103.603 43.2988 101.681 41.8034 99.685 41.8425L99.7732 46.3416C99.6625 46.3438 99.5313 46.3038 99.4158 46.2014C99.2974 46.0964 99.1834 45.9092 99.1757 45.6682L103.673 45.5258ZM99.9255 49.4542C101.92 49.3671 103.744 47.7529 103.673 45.5258L99.1757 45.6682C99.1681 45.4271 99.2701 45.2331 99.3816 45.1209C99.4903 45.0115 99.6187 44.9633 99.7292 44.9584L99.9255 49.4542ZM102.208 51.3218L102.076 47.1353L97.5785 47.2773L97.7106 51.4637L102.208 51.3218ZM103.873 52.8268C103.804 50.6255 101.922 49.1372 99.9531 49.1428L99.9659 53.6427C99.8554 53.6431 99.7257 53.6016 99.6118 53.4989C99.4947 53.3933 99.3832 53.2073 99.3757 52.9692L103.873 52.8268ZM100.193 56.7517C102.159 56.6328 103.943 55.0283 103.873 52.8268L99.3757 52.9692C99.3681 52.7311 99.4677 52.5385 99.5778 52.4257C99.6849 52.3161 99.8117 52.2665 99.9219 52.2599L100.193 56.7517ZM102.439 58.6228L102.307 54.4348L97.8088 54.5767L97.941 58.7647L102.439 58.6228ZM104.073 60.1276C104.005 57.9519 102.163 56.471 100.221 56.444L100.159 60.9435C100.048 60.942 99.9201 60.8991 99.8079 60.7962C99.6921 60.6899 99.5831 60.5051 99.5757 60.27L104.073 60.1276ZM100.462 64.0478C102.398 63.898 104.142 62.3035 104.073 60.1276L99.5757 60.27C99.5682 60.0349 99.6653 59.8436 99.7741 59.7303C99.8796 59.6205 100.005 59.5697 100.115 59.5612L100.462 64.0478ZM102.685 66.4367L102.537 61.7335L98.0392 61.8754L98.1876 66.5787L102.685 66.4367ZM104.726 64.1201L100.365 64.2589L100.508 68.7566L104.869 68.6178L104.726 64.1201ZM106.346 62.5335C104.348 62.5968 102.513 64.188 102.548 66.4044L107.048 66.3335C107.051 66.5745 106.947 66.7651 106.836 66.8743C106.727 66.9814 106.598 67.0278 106.489 67.0312L106.346 62.5335ZM110.382 66.1554C110.276 63.9416 108.344 62.4701 106.346 62.5335L106.489 67.0312C106.379 67.0347 106.248 66.9965 106.132 66.8965C106.014 66.7946 105.898 66.611 105.887 66.3702L110.382 66.1554ZM112.541 63.8715L108.063 64.0139L108.206 68.5117L112.684 68.3692L112.541 63.8715ZM114.161 62.3197C112.188 62.3823 110.38 63.9299 110.363 66.1028L114.863 66.1379C114.859 66.6426 114.476 66.812 114.304 66.8174L114.161 62.3197ZM118.191 65.8539C118.036 63.6868 116.134 62.2572 114.161 62.3197L114.304 66.8174C114.132 66.8229 113.739 66.6781 113.703 66.1746L118.191 65.8539ZM119.793 63.6407L115.875 63.7654L116.019 68.2631L119.936 68.1385L119.793 63.6407ZM117.47 61.3455L117.616 65.9606L122.114 65.8186L121.968 61.2036L117.47 61.3455ZM119.679 59.0249C119.79 59.023 119.921 59.0631 120.036 59.1655C120.155 59.2706 120.268 59.4577 120.276 59.6984L115.778 59.8408C115.849 62.0648 117.766 63.5594 119.759 63.5242L119.679 59.0249ZM120.276 59.6984C120.284 59.9391 120.182 60.1329 120.071 60.2452C119.962 60.3547 119.834 60.403 119.723 60.4081L119.518 55.9127C117.527 56.0036 115.708 57.6166 115.778 59.8408L120.276 59.6984ZM117.24 54.0447L117.372 58.2314L121.87 58.0894L121.738 53.9027L117.24 54.0447ZM115.578 52.5396C115.648 54.738 117.525 56.2255 119.491 56.2237L119.487 51.7237C119.597 51.7236 119.727 51.7652 119.84 51.8679C119.957 51.9736 120.069 52.1595 120.076 52.3972L115.578 52.5396ZM119.25 48.6153C117.288 48.7377 115.509 50.3411 115.578 52.5396L120.076 52.3973C120.084 52.635 119.984 52.8275 119.874 52.9403C119.767 53.05 119.641 53.0997 119.531 53.1065L119.25 48.6153ZM117.009 46.7437L117.142 50.9319L121.639 50.7899L121.507 46.6017L117.009 46.7437ZM115.378 45.2388C115.447 47.4115 117.283 48.8915 119.222 48.9224L119.294 44.423C119.404 44.4247 119.532 44.4677 119.644 44.5707C119.76 44.677 119.869 44.8617 119.876 45.0965L115.378 45.2388ZM118.982 41.3193C117.049 41.4727 115.31 43.066 115.378 45.2388L119.876 45.0965C119.884 45.3312 119.787 45.5224 119.678 45.6357C119.573 45.7455 119.448 45.7965 119.338 45.8052L118.982 41.3193ZM116.763 38.9295L116.911 43.6333L121.409 43.4913L121.261 38.7875L116.763 38.9295ZM115.279 41.2284L119.083 41.1074L118.94 36.6096L115.136 36.7307L115.279 41.2284ZM113.66 42.8176C115.66 42.7542 117.496 41.1597 117.458 38.9401L112.958 39.019C112.954 38.7777 113.058 38.5866 113.17 38.4772C113.279 38.3698 113.407 38.3233 113.517 38.3199L113.66 42.8176ZM109.624 39.1891C109.726 41.4064 111.66 42.881 113.66 42.8176L113.517 38.3199C113.627 38.3164 113.758 38.3546 113.874 38.4549C113.992 38.5571 114.108 38.7411 114.119 38.9822L109.624 39.1891Z" fill="black" mask="url(#path-9-inside-4_5495_91007)"></path></svg>
+                </div>
+                <div class="invite-friend-panel-content-container">
+                    <div class="invite-friend-panel-content-container-header">
+                        <h2>Find Inspiration together</h2>
+                    </div>
+                    <ul class="invite-friend-panel-content-container-main">
+                        <li>
+                            <h2>Share your link</h2>
+                            <p>You friends nees to follow you using your link to message you</p>
+                        </li>
+                        <li>
+                            <h2>Your friends follow you</h2>
+                            <p>Each link works for a few friends at a time, but you can get as many as you need</p>
+                        </li>
+                        <li>
+                            <h2>Follow back!</h2>
+                            <p>Once you’re following each other, you can share ideas, goals and more via direct messages</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="invite-friend-panel-btn-container">
+                    <div class="invite-friend-panel-btns" id="copy-link-btn">
+                        <a href="/" class="invite-friend-panel-btns-icon"></a>
+                        <p>Copy Link</p>           
+                    </div>
+                    <div class="invite-friend-panel-btns" id="whatsapp-btn">
+                        <a href="/" class="invite-friend-panel-btns-icon"></a>
+                        <p>Whatsapp</p>
+                    </div>
+                    <div class="invite-friend-panel-btns" id="facebook-btn">
+                        <a href="/" class="invite-friend-panel-btns-icon"></a>
+                        <p>Facebook</p>
+                    </div>
+                    <div class="invite-friend-panel-btns" id="x-btn">
+                        <a href="/" class="invite-friend-panel-btns-icon"></a>
+                        <p>X</p>
+                    </div>
+                    <div class="invite-friend-panel-btns" id="email-btn">
+                        <a href="/" class="invite-friend-panel-btns-icon"></a>
+                        <p>Email</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="setting-panel">
+        <div class="setting-panel-container">
+            <div class="setting-panel-container-1">
+                <div class="setting-panel-container-1-btn">
+                    <span>Settings</span>
+                </div>
+                <div class="setting-panel-container-1-btn">
+                    <span>Home feed turner</span>
+                </div>
+            </div>
+            <div class="setting-panel-container-2">
+                <div class="setting-panel-container-2-btn">
+                    <span>Claimed external accounts</span>
+                </div>
+                <div class="setting-panel-container-2-btn">
+                    <span>Install the Windows app</span>
+                </div>
+                <div class="setting-panel-container-2-btn">
+                    <span>Reports and violations centre</span>
+                </div>
+                <div class="setting-panel-container-2-btn">
+                    <span>Your privacy rights</span>
+                </div>
+                <div class="setting-panel-container-2-btn">
+                    <span>Help Centre</span>
+                </div>
+                <div class="setting-panel-container-2-btn">
+                    <span>Terms of Service</span>
+                </div>
+                <div class="setting-panel-container-2-btn">
+                    <span>Privacy Policy</span>
+                </div>
+                <div class="setting-panel-container-2-btn">
+                    <span>Be a beta tester</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/javascripts/navbar.js"></script>
+</body>
+
+</html>
