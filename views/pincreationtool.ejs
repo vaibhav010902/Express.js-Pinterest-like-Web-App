@@ -66,6 +66,10 @@
                                 </div>
                             </div>
                         </div>
+                        <p id="choose-file-form-below-border"></p>
+                        <div id="pin-creation-tool-main-container-left-btn">
+                            <button>Save from URL</button>
+                        </div>
                     </div>
                 </div>
                 <div class="pin-creation-tool-container-right">
@@ -77,8 +81,8 @@
                             </div>
                             <div id="description-container" class="container-1-div">
                                 <label for="imagecaption">Description</label>
-                                <input type="text" name="imagecaption" id="image-description"
-                                    placeholder="Add a detail description">
+                                <textarea type="text" name="imagecaption" id="image-description"
+                                    placeholder="Add a detail description"></textarea>
                             </div>
                         </div>
                         <div class="container-2">
@@ -91,18 +95,26 @@
                                 <input type="text" name="board" id="board" placeholder="Choose a board">
                             </div>
                             <div id="tagged-topic-container" class="container-2-div">
-                                <label for="taggedtopic">Tag topics (0)</label>
-                                <input type="text" name="taggedtopic" id="taggedtopic" placeholder="Search for a tag">
+                                <div id="tagged-topic-container-div">
+                                    <label for="taggedtopic">Tag topics (0)</label>
+                                    <input type="text" name="taggedtopic" id="taggedtopic" placeholder="Search for a tag">
+                                </div>
+                                <p id="container-2-p">Don't worry, people won't see your tags</p>
                             </div>
                         </div>
-                        <div class="container-3">
+                        <!-- <div class="container-3">
                             <div id="title-container" class="container-3-div">
                                 <label for="imagetitle">Title</label>
                                 <input type="text" name="imagetitle" id="">
                             </div>
-                        </div>
+                            <p id="container-3-p">Don't worry, people won't see your tags</p>
+                        </div> -->
                         <div class="container-4">
-
+                            <div id="container-4-div">
+                                <p id="container-4-div-p">Tag products</p>
+                                <button id="container-4-div-btn">Add products</button>
+                            </div>
+                            <p id="container-4-p">More options</p>
                         </div>
                     </div>
                 </div>
@@ -124,7 +136,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
             crossorigin="anonymous"></script>
-        <script src="/javascripts/profile.js"></script>
+        <!-- <script src="/javascripts/profile.js"></script> -->
         <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </body>
 

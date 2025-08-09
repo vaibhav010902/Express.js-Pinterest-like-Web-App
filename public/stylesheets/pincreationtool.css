@@ -51,28 +51,49 @@
     flex-direction: row;
     width: 100%;
     height: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
-.pin-creation-tool-main-container-left,.pin-creation-tool-main-container-right{
+.pin-creation-tool-container-left{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+.pin-creation-tool-container-right{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+
+.pin-creation-tool-main-container-right{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    /* width: 100%; */
 
 }
 .pin-creation-tool-main-container-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100%; */
+    gap: 20px;
     position: relative;
+    width: 300px;
+    margin-top: 30px;
 }
 .pin-creation-tool-main-container-right{
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    /* gap: 60px; */
 }
 
 .container-1,.container-2{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 13px;
 }
 
 .container-1-div,.container-2-div,.container-3-div{
@@ -96,7 +117,7 @@
 }
 #title-container label{
     position: absolute;
-    font-size: 10px;
+    font-size: 9.5px;
     color: black;
     font-weight: 500;
     left: 16px;
@@ -105,11 +126,18 @@
 
 #image-description{
     width: 100%;
-    height: 100%;
+    min-height: 80px;
+    /* height: auto; */
     padding: 10px 12px 10px 16px;
     border-radius: 8px;
     outline: none;
-    border: 1px solid #91918c
+    border: 1px solid #91918c;
+    resize: vertical;
+}
+#image-description::placeholder{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
 }
 #description-container label{
     font-size: 10px;
@@ -134,9 +162,9 @@
     border: 1px solid #91918c
 }
 .container-2-div label{
-    font-size: 10px;
+    font-size: 9px;
     color: black;
-    /* font-weight: 500; */
+    font-weight: 500;
     left: 16px;
     top: 10px;
 }
@@ -159,7 +187,7 @@
 
 
 .choose-file-container{
-    width: 300px;
+    width: 100%;
     height: 370px;
     border-radius: 12px;
     /* border: 1px solid black; */
@@ -189,6 +217,7 @@
     font-size: 13px;
     color: black;
     font-weight: 400;
+    text-align: center;
 }
 .choose-file-container-2{
     font-size: 10px;
@@ -211,4 +240,88 @@ input[type="file"] {
   width: 300px;
     height: 370px;
 /* border: 1px solid black; */
+}
+
+#pin-creation-tool-main-container-left-btn{
+    width: 100%;
+}
+#pin-creation-tool-main-container-left-btn button{
+    width: 100%;
+    padding: 8px 0;
+    font-size: 10px;
+    font-weight: 600;
+    color: #000000;
+    background-color: #e5e5e0;
+    border: none;
+    border-radius: 7px;
+}
+#choose-file-form-below-border{
+    height: 1px;
+    width: 100%;
+    background-color: #c8c8c1;
+}
+.container-4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    /* border: 1px solid black; */
+    gap: 10px;
+    margin-top: 20px;
+}
+#container-4-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#container-4-div-p{
+    font-size: 9.5px;
+    font-weight: 500;
+    color: #000000;
+}
+#container-4-div-btn{
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000;
+    background-color: #e5e5e0;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 8px;
+}
+#container-4-p{
+    font-size: 12px;
+    font-weight: 600;
+}
+.container-2{
+    margin-top: 35px;
+}
+#tagged-topic-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-top: 8px;
+}
+#tagged-topic-container-div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+    border: 1px solid #91918c;
+    padding: 10px 12px 10px 16px;
+    border-radius: 10px;
+}
+#tagged-topic-container-div #taggedtopic{
+    padding: 0;
+    border: none;
+}
+#container-2-p{
+    font-size: 9.5px;
+    font-weight: 500;
+    margin-left: 16px;
+    color: #62625b;
 }

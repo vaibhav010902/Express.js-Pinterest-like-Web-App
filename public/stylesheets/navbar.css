@@ -22,6 +22,12 @@ body {
     text-decoration: none;
     background-color: rgb(241, 241, 241);
 }
+.material-symbols-outlined.active.panel-open {
+    font-size: 25px;
+    font-weight: 300;
+    text-decoration: none;
+    background-color: rgb(241, 241, 241);
+}
 
 .sidebar {
     position: fixed;
@@ -94,7 +100,11 @@ body {
     cursor: pointer;
     transform: scale(0.9);
 }
-
+.sidebar-btns.active{
+    background-color: #ededed;
+    cursor: pointer;
+    transform: scale(0.9);
+}
 
 
 
