@@ -341,12 +341,15 @@ input[type="file"] {
 
 /* CONTAINER-5 */
 .container-5{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     margin-top: 20px;
     gap: 10px;
+}
+.container-5.visible{
+    display: flex;
 }
 #container-5-div-1{
     display: flex;
@@ -376,6 +379,16 @@ input[type="file"] {
     position: relative;
     border: 1px solid #91918c;
     cursor: pointer;
+    z-index: 1;
+}
+.allow-people-to-comment-btn div{
+    height: 18px;
+    width: 30px;
+    background-color: transparent;
+    border-radius: 15px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
 }
 .allow-people-to-comment-btn p, .show-similar-products-btn p{
     width: 17px;
@@ -442,6 +455,7 @@ input[type="file"] {
     border: none;
     columns: 2;
     resize: none;
+    outline: none;
 }
 #container-5-div-2-div-textarea::placeholder{
     font-size: 13px;
