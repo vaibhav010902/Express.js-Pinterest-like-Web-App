@@ -1,12 +1,14 @@
 // const upload = require("../../routes/multer");
 
 emptyMessage = document.querySelector('.empty-message');
-createPinBtn = document.querySelector('.profile-saved-content .create-pin-btn');
+createPinBtn = document.querySelector('.profile-content .create-pin-btn');
 uploadCancelBtn = document.querySelector('.upload-cancel-btn');
 const uploadForm = document.querySelector('.upload-form');
 const createBtn = document.getElementById("create-btn");
 const savedBtn = document.getElementById("saved-btn")
 
+console.log(createPinBtn)
+console.log(createBtn)
 createPinBtn.addEventListener('click', function() {
     console.log('Create Pin button clicked');
 
@@ -14,6 +16,7 @@ createPinBtn.addEventListener('click', function() {
 
     
     uploadForm.style.display = 'flex';
+    console.log("clicked")
 })
 uploadCancelBtn.addEventListener('click', function() {
     console.log('Upload Cancel button clicked');
