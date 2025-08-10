@@ -368,15 +368,16 @@ input[type="file"] {
 #container-5-div-1-div-2{
     gap: 15px;
 }
-#allow-people-to-comment-btn, #show-similar-products-btn{
+.allow-people-to-comment-btn, .show-similar-products-btn{
     height: 18px;
     width: 30px;
     background-color: #91918c;
     border-radius: 15px;
     position: relative;
     border: 1px solid #91918c;
+    cursor: pointer;
 }
-#allow-people-to-comment-btn p, #show-similar-products-btn p{
+.allow-people-to-comment-btn p, .show-similar-products-btn p{
     width: 17px;
     height: 17px;
     background-color: white;
@@ -384,7 +385,7 @@ input[type="file"] {
     position: absolute;
     border: 1px solid #91918c;
 }
-#allow-people-to-comment-btn.active, #show-similar-products-btn.active{
+.allow-people-to-comment-btn.active, .show-similar-products-btn.active{
     height: 18px;
     width: 30px;
     background-color: #435ee5;
@@ -392,7 +393,7 @@ input[type="file"] {
     position: relative;
     border: 1px solid #435ee5;
 }
-#allow-people-to-comment-btn p.active ,#show-similar-products-btn p.active{
+.allow-people-to-comment-btn p.active ,.show-similar-products-btn p.active{
     width: 17px;
     height: 17px;
     background-color: white;
@@ -401,7 +402,7 @@ input[type="file"] {
     border: 1px solid #435ee5;
     right: 0;
 }
-#allow-people-to-comment-caption, #show-similar-products-caption{
+.allow-people-to-comment-caption, .show-similar-products-caption{
     font-size: 12px;
     font-weight: 500;
 }
