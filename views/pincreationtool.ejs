@@ -29,6 +29,9 @@
                     <span>Create Pin</span>
                 </div>
                 <div class="navbar-btn-container">
+                    <button type="submit" class="publish-btn">
+                            Publish
+                    </button>
                     <div class="navbar-btn">
                         <span class="material-symbols-outlined">
                             add
@@ -43,34 +46,36 @@
             </nav>
             <div class="pin-creation-tool-main-container">
                 <div class="pin-creation-tool-container-left">
-                    <div class="pin-creation-tool-main-container-left">
-                        <div class="choose-file">
-                            <label for="file-upload" class="custom-file-upload">
-                            </label>
-                            <input id="file-upload" type="file" />
-                            <div class="choose-file-container">
-                                <div class="choose-file-container-1">
-                                    <div class="choose-file-container-icon">
-                                        <span class="material-symbols-outlined">
-                                            upload
-                                        </span>
+                        <form class="pin-creation-tool-main-container-left" action="/upload" method="post" enctype="multipart/form-data">
+                            <div class="choose-file">
+                                <label for="file-upload" class="custom-file-upload">
+                                </label>
+                                <input id="file-upload" type="file" name="file"/>
+                                <div class="choose-file-container">
+                                    <div class="choose-file-container-1">
+                                        <div class="choose-file-container-icon">
+                                            <span class="material-symbols-outlined">
+                                                upload
+                                            </span>
+                                        </div>
+                                        <div class="choose-file-container-context">
+                                            <span>Choose a file or drag and drop it here</span>
+                                        </div>
                                     </div>
-                                    <div class="choose-file-container-context">
-                                        <span>Choose a file or drag and drop it here</span>
+                                    <div class="choose-file-container-2">
+                                        <span>We recommend using high-quality .jpg files less than 20MB or .mp4 files less
+                                            than
+                                            200MB.</span>
                                     </div>
-                                </div>
-                                <div class="choose-file-container-2">
-                                    <span>We recommend using high-quality .jpg files less than 20MB or .mp4 files less
-                                        than
-                                        200MB.</span>
                                 </div>
                             </div>
-                        </div>
-                        <p id="choose-file-form-below-border"></p>
-                        <div id="pin-creation-tool-main-container-left-btn">
-                            <button>Save from URL</button>
-                        </div>
-                    </div>
+                            <div class="file-preview">
+                            </div>
+                            <p id="choose-file-form-below-border"></p>
+                            <div id="pin-creation-tool-main-container-left-btn">
+                                <button>Save from URL</button>
+                            </div>
+                        </form>
                 </div>
                 <div class="pin-creation-tool-container-right">
                     <div class="pin-creation-tool-main-container-right">

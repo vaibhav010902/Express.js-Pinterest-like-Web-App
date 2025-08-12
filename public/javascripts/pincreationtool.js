@@ -2,6 +2,48 @@ const allowPeopleToCommentBtn = document.querySelector(".allow-people-to-comment
 const allowPeopleToCommentToggle = document.querySelector(".allow-people-to-comment-btn p");
 const showSimilarProductsBtn = document.querySelector(".show-similar-products-btn");
 const showSimilarProductsToggle = document.querySelector(".show-similar-products-btn p");
+const fileInput = document.getElementById("file-upload");
+const choseFileContainer = document.querySelector(".choose-file") 
+const previewContainer = document.querySelector(".file-preview")
+
+function fileDisplayFunction(){
+    choseFileContainer.style.display = "none";
+    document.getElementById("choose-file-form-below-border").style.display = "none";
+    document.getElementById("pin-creation-tool-main-container-left-btn").style.display = "none";
+    previewContainer.style.display = "flex";
+}
+fileInput.addEventListener("change", () => {
+    
+    console.log(fileInput.files)
+
+    previewContainer.innerHTML = "";
+    const file = fileInput.files[0];
+    if(!file) return;
+
+    fileDisplayFunction();
+    const reader = new FileReader();
+
+    reader.onload = (e) => {
+        if(file.type.startsWith('image/')){
+            const img = document.createElement("img");
+            img.src = e.target.result;
+            img.style.maxWidth = "100%";
+            img.style.maxHeight = "400px";
+            img.style.borderRadius = "10px"
+            previewContainer.appendChild(img);
+        }else if(file.type.startsWith('video/')){
+            const video = document.createElement('video');
+            video.src = e.target.result;
+            video.controls = true;
+            video.style.maxWidth = "100%";
+            video.style.maxHeight = "300px";
+            previewContainer.appendChild(video);
+        }else {
+            previewContainer.textContent = "File type not supported for preview.";
+        }
+    }
+    reader.readAsDataURL(file);
+})
 
 const moreOptionsBtn = document.querySelector("#container-4-p");
 const moreOptionsBtnContent = document.querySelector(".container-5")

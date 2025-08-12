@@ -114,6 +114,9 @@ router.post('/upload', isLoggedIn, upload.single('file'), async (req, res) => {
   // res.send('File uploaded successfully!')
 })
 
+router.post("/publish", isLoggedIn, upload.single("file"), async (req, res) => {
+  
+})
 
 router.get('/navbar', isLoggedIn, async (req, res) => {
   let user = await userModel.findOne({
@@ -138,7 +141,8 @@ router.get("/pin-creation-tool",isLoggedIn , async (req, res)=>{
   let userDetails = await userModel.findOne({
     username: req.session.passport.user
   })
-  res.render("pincreationtool",{user: userDetails, error: req.flash("fileError")})
+  let preview = 0
+  res.render("pincreationtool",{user: userDetails, error: req.flash("fileError"), preview: preview})
 })
 
 module.exports = router;
