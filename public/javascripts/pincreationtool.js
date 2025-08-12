@@ -11,6 +11,8 @@ function fileDisplayFunction(){
     document.getElementById("choose-file-form-below-border").style.display = "none";
     document.getElementById("pin-creation-tool-main-container-left-btn").style.display = "none";
     previewContainer.style.display = "flex";
+    document.querySelector(".pin-creation-tool-main-container-right-disable").style.display = "none"
+    document.querySelector(".publish-btn").style.display = "flex"
 }
 fileInput.addEventListener("change", () => {
     

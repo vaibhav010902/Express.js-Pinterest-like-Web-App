@@ -115,7 +115,29 @@ router.post('/upload', isLoggedIn, upload.single('file'), async (req, res) => {
 })
 
 router.post("/publish", isLoggedIn, upload.single("file"), async (req, res) => {
-  
+  if(!req.file){
+    req.flash('fileError', 'Please upload a file');
+    return res.status(400).redirect('/pincreationtool');
+  }
+  // abhi tak file keval upload hui hai, database mein store nahi hui hai
+  // ab humein file ka path database mein store karna hai aur postid create karni hai aur fir user ko provide bhi karni hai
+
+  const user = await userModel.findOne({
+    username: req.session.passport.user
+  })
+  const postData = await postModel.create({
+    image: req.file.filename, // multer ke through file ka naam milta hai
+    imageTitle: req.body.imagetitle,
+    imageCaption: req.body.imagecaption,
+    user: user._id // user ki id ko post ke saath link karna hai
+  })
+  // ab post ki id ko user ke posts mein add karna hai
+  user.posts.push(postData._id);
+  await user.save(); // user ko save karna hai taaki post ki id user ke posts mein add ho jaye
+  // ab humein user ke profile page par redirect karna hai
+  console.log("Uploaded")
+  req.flash('fileError', 'File uploaded successfully!');
+  res.redirect('/pincreationtool');
 })
 
 router.get('/navbar', isLoggedIn, async (req, res) => {

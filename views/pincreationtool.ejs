@@ -23,7 +23,7 @@
 <body>
     <%- include('./navbar2.ejs') %>
 
-        <div class="pin-creation-tool-container">
+        <form class="pin-creation-tool-container" action="/publish" method="post" enctype="multipart/form-data">
             <nav class="pin-creation-tool-container-navbar">
                 <div class="navbar-title">
                     <span>Create Pin</span>
@@ -46,7 +46,7 @@
             </nav>
             <div class="pin-creation-tool-main-container">
                 <div class="pin-creation-tool-container-left">
-                        <form class="pin-creation-tool-main-container-left" action="/upload" method="post" enctype="multipart/form-data">
+                        <div class="pin-creation-tool-main-container-left">
                             <div class="choose-file">
                                 <label for="file-upload" class="custom-file-upload">
                                 </label>
@@ -75,7 +75,7 @@
                             <div id="pin-creation-tool-main-container-left-btn">
                                 <button>Save from URL</button>
                             </div>
-                        </form>
+                        </div>
                 </div>
                 <div class="pin-creation-tool-container-right">
                     <div class="pin-creation-tool-main-container-right">
@@ -163,9 +163,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="pin-creation-tool-main-container-right-disable">
+                        
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
 
         <!-- <form action="/upload" , method="post" , enctype="multipart/form-data" class="upload-form">
                         <input type="text" name="imagetitle" placeholder="Image Title">
