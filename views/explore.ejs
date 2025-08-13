@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/navbar.css">
+    <link rel="stylesheet" href="/stylesheets/explore.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+    <title>Pinterest</title>
+</head>
+
+<body>
+    <%- include('./navbar2.ejs') %>
+    <div class="explore-page">
+        <div id="explore-page-container-1" class="explore-page-containers">
+            <p><%= date %></p>
+            <p>Stay inspired</p>
+        </div>
+        <div id="explore-page-container-2" class="explore-page-containers">
+            <div id="explore-page-container-2-tile-container">
+                <div id="tile">
+                    <img src="https://i.pinimg.com/736x/9d/9c/15/9d9c15d49cf1a9ee0eaef3beb28133bc.jpg" alt="">
+                    <div id="tile-detail-container">
+                        <div id="tile-detail">
+                            <h6>Timeless tastes</h6>
+                            <h2>The most loved Indian dishes</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="tile">
+                    <img src="https://i.pinimg.com/736x/ee/0a/2b/ee0a2b75f6abd981598211e265c6bc80.jpg" alt="">
+                    <div id="tile-detail-container">
+                        <div id="tile-detail">
+                            <h6>College starter pack</h6>
+                            <h2>ENHYPEN'S Walk the Line tour essential</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="tile">
+                    <img src="https://i.pinimg.com/736x/69/5a/af/695aaf128214620c808630896df14a11.jpg" alt="">
+                    <div id="tile-detail-container">
+                        <div id="tile-detail">
+                            <h6>Celebrating patriotism</h6>
+                            <h2>Independence Day greetings</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="tile">
+                    <img src="https://i.pinimg.com/736x/69/5a/af/695aaf128214620c808630896df14a11.jpg" alt="">
+                    <div id="tile-detail-container">
+                        <div id="tile-detail">
+                            <h6>New hobby unlocked</h6>
+                            <h2>Try bead embroidery</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="tile">
+                    <img src="https://i.pinimg.com/736x/09/5e/8e/095e8e08596cad8c6bd90e9955926aac.jpg" alt="">
+                    <div id="tile-detail-container">
+                        <div id="tile-detail">
+                            <h6>Keepin'it classic</h6>
+                            <h2>Scholastic fits for boys</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="tile">
+                    <img src="https://i.pinimg.com/736x/7a/ae/0f/7aae0f365b62cb48e0b754b0e82774c9.jpg" alt="">
+                    <div id="tile-detail-container">
+                        <div id="tile-detail">
+                            <h6>Pick your fav</h6>
+                            <h2>Lipstick looks suited for you</h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="tile">
+                    <img src="https://i.pinimg.com/736x/c2/65/43/c26543bcf441989eb6b6cd7c8d361b73.jpg" alt="">
+                    <div id="tile-detail-container">
+                        <div id="tile-detail">
+                            <h6>Back to the roots</h6>
+                            <h2>Show your desi vibe</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="explore-page-container-3" class="explore-page-containers">
+            <span class="material-symbols-outlined" id="explore-page-container-3-icon">
+                check_circle
+            </span>
+            <div id="explore-page-container-3-content">
+                <p>That's all for today!</p>
+                <p>Come back tomorrow for more inspiration</p>
+            </div>
+            <div id="explore-page-container-3-btn">
+                <span>Go to home feed</span>
+            </div>
+        </div>
+    </div>
+    <script src="./stylesheets/explore.js"></script>
+    <% include partials/footer.ejs %>

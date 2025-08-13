@@ -167,5 +167,18 @@ router.get("/pin-creation-tool",isLoggedIn , async (req, res)=>{
   res.render("pincreationtool",{user: userDetails, error: req.flash("fileError"), preview: preview})
 })
 
+router.get("/explore", isLoggedIn, async (req, res) => {
+  let userDetails = await userModel.findOne({
+    username: req.session.passport.user
+  })
+  let date = new Date();
+  const formattedDate = new Intl.DateTimeFormat('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  }).format(date);
+  res.render("explore", {user: userDetails, error: req.flash("fileError"), date: formattedDate})
+})
+
 module.exports = router;
 
