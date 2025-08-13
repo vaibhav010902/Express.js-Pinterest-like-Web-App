@@ -296,6 +296,7 @@ input[type="file"] {
     background-color: #e5e5e0;
     border: none;
     border-radius: 7px;
+    cursor: pointer;
 }
 #choose-file-form-below-border{
     height: 1px;

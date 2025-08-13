@@ -117,7 +117,7 @@ router.post('/upload', isLoggedIn, upload.single('file'), async (req, res) => {
 router.post("/publish", isLoggedIn, upload.single("file"), async (req, res) => {
   if(!req.file){
     req.flash('fileError', 'Please upload a file');
-    return res.status(400).redirect('/pincreationtool');
+    return res.status(400).redirect('/pin-creation-tool');
   }
   // abhi tak file keval upload hui hai, database mein store nahi hui hai
   // ab humein file ka path database mein store karna hai aur postid create karni hai aur fir user ko provide bhi karni hai
@@ -137,7 +137,7 @@ router.post("/publish", isLoggedIn, upload.single("file"), async (req, res) => {
   // ab humein user ke profile page par redirect karna hai
   console.log("Uploaded")
   req.flash('fileError', 'File uploaded successfully!');
-  res.redirect('/pincreationtool');
+  res.redirect('/pin-creation-tool');
 })
 
 router.get('/navbar', isLoggedIn, async (req, res) => {
