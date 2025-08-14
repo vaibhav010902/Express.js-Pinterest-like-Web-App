@@ -52,6 +52,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+    /* background-color: rgb(241, 241, 241); */
+    cursor: pointer;
+}
+.navbar-btn:hover{
     background-color: rgb(241, 241, 241);
 }
 .navbar-btn .material-symbols-outlined{
@@ -508,10 +512,10 @@ input[type="file"] {
     padding-left: 16px;
 }
 
-.pin-creation-tool-container-navbar{
+.pin-creation-tool-container-navbar.sidepanelactive{
     width: 80%;
 }
-.pin-creation-tool-main-container{
+.pin-creation-tool-main-container.sidepanelactive{
     width: 80%;
 }
 .pin-creation-tool-side-panel{
@@ -523,7 +527,13 @@ input[type="file"] {
     background-color: white;
     z-index: 5;
     border: 1px solid #e5e5e0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
     /* padding: 13px; */
+}
+.pin-creation-tool-side-panel.sidepanelactive{
+    display: flex;
 }
 
 .pin-creation-tool-side-panel-navbar{

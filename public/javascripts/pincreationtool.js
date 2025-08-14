@@ -5,6 +5,10 @@ const showSimilarProductsToggle = document.querySelector(".show-similar-products
 const fileInput = document.getElementById("file-upload");
 const choseFileContainer = document.querySelector(".choose-file") 
 const previewContainer = document.querySelector(".file-preview")
+const sidepanelBtn = document.querySelector("#pin-creation-tool-sidepanel-btn .material-symbols-outlined")
+const sidePanelContainer = document.querySelector(".pin-creation-tool-side-panel")
+const pinCreationToolContainerNavbar = document.querySelector(".pin-creation-tool-container-navbar")
+const pinCreationToolMainContainer = document.querySelector(".pin-creation-tool-main-container")
 
 function fileDisplayFunction(){
     choseFileContainer.style.display = "none";
@@ -83,3 +87,18 @@ moreOptionsBtn.addEventListener("click", (e) => {
         btn.textContent = "keyboard_arrow_down";
     }
 });
+
+sidepanelBtn.addEventListener("click", ()=>{
+    console.log("clicked")
+    if (window.getComputedStyle(sidePanelContainer).display === "none") {
+            sidepanelBtn.textContent = "keyboard_double_arrow_right";
+            pinCreationToolContainerNavbar.classList.add("sidepanelactive");
+            pinCreationToolMainContainer.classList.add("sidepanelactive");
+            sidePanelContainer.classList.add("sidepanelactive");
+        } else {
+            sidepanelBtn.textContent = "keyboard_double_arrow_left";
+            pinCreationToolContainerNavbar.classList.remove("sidepanelactive");
+            pinCreationToolMainContainer.classList.remove("sidepanelactive");
+            sidePanelContainer.classList.remove("sidepanelactive");
+        }
+}) 
