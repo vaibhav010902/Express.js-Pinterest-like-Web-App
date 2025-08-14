@@ -507,3 +507,125 @@ input[type="file"] {
     color: #62625b;
     padding-left: 16px;
 }
+
+.pin-creation-tool-container-navbar{
+    width: 80%;
+}
+.pin-creation-tool-main-container{
+    width: 80%;
+}
+.pin-creation-tool-side-panel{
+    position: fixed;
+    top: 65px;
+    right: 0;
+    width: 19.2%;
+    height: 100vh;
+    background-color: white;
+    z-index: 5;
+    border: 1px solid #e5e5e0;
+    /* padding: 13px; */
+}
+
+.pin-creation-tool-side-panel-navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 13px;
+    border-bottom: 1px solid #e5e5e0;
+}
+.pin-creation-tool-side-panel-navbar-header-container{
+    width: 100%;
+    padding: 5px 0;
+    /* border: 1px solid #e5e5e0; */
+}
+.pin-creation-tool-side-panel-navbar-header-container p{
+    font-size: 15px;
+    font-weight: 600;
+}
+.pin-creation-tool-side-panel-navbar-btn-container{
+    width: 100%;
+    padding: 5px 0;
+    /* border: 1px solid #e5e5e0; */
+}
+.pin-creation-tool-side-panel-navbar-btn-container-btn{
+    width: 100%;
+    padding: 5px 0;
+    /* border: 1px solid #e5e5e0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e5e0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pin-creation-tool-side-panel-navbar-btn-container-btn:hover{
+    background-color: #e2e2e2;
+}
+.pin-creation-tool-side-panel-navbar-btn-container-btn span{
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+}
+
+.pin-creation-tool-side-panel-container{
+    /* border: 1px solid #e5e5e0; */
+    width: 100%;
+    height: 100%;
+    padding: 20px 5px ;
+}
+.pin-creation-tool-side-panel-container-card-container{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #e5e5e0; */
+    display: flex;
+    flex-direction: column;
+    padding: 3px 0;
+}
+.pin-creation-tool-side-panel-cards{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid #e5e5e0; */
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.pin-creation-tool-side-panel-cards:hover{
+    background-color: #e2e2e2;
+}
+.pin-creation-tool-side-panel-cards-container{
+    width: 100%;
+    /* border: 1px solid #e5e5e0; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.pin-creation-tool-side-panel-cards-container-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+}
+.pin-creation-tool-side-panel-cards-container-1 img{
+    width: 58px;
+    height: 58px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.pin-creation-tool-side-panel-cards-container-1 p{
+    font-size: 10px;
+    font-weight: 500;
+}
+.pin-creation-tool-side-panel-cards-container-2{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.pin-creation-tool-side-panel-cards-container-2 span{
+    font-size: 20px;
+}
