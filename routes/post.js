@@ -27,6 +27,27 @@ const postSchema = mongoose.Schema({
     likes: {
         type: Array,
         default: []
+    },
+    link: {
+        type: String
+    },
+    description: {
+        type: String
+    },
+    taggedtopic: {
+        type: Array,
+        default: []
+    },
+    allowPeopleToComment: {
+        type: Boolean,
+        default: true
+    },
+    showSimilarProducts: {
+        type: Boolean,
+        default: true
+    },
+    altText: {
+        type: String
     }
 })
 

@@ -129,6 +129,11 @@ router.post("/publish", isLoggedIn, upload.single("file"), async (req, res) => {
     image: req.file.filename, // multer ke through file ka naam milta hai
     imageTitle: req.body.imagetitle,
     imageCaption: req.body.imagecaption,
+    description: req.body.description,
+    link: req.body.link,
+    taggedtopic: req.body.taggedtopic,
+    board: req.body.board,
+    altText: req.body.altText,
     user: user._id // user ki id ko post ke saath link karna hai
   })
   // ab post ki id ko user ke posts mein add karna hai
